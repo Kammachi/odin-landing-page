@@ -8,7 +8,7 @@ body {
 /* header */
 
 .header_layer {
-  background-color: #1F2937;
+  background-color: #191919;
   color: white;
   display: flex;
   flex-direction: column;
@@ -16,14 +16,22 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 16px;
   border-bottom: 1px grey solid;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
 .logo {
-  font-size: 24px;
+  font-size: 32px;
   color: #F9FAF8;
   font-weight: 700;
 }
@@ -41,17 +49,13 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 500px;
-  gap: 8px;
+  gap: 16px;
 }
 
 .title {
   font-size: 48px;
   font-weight: 1000;
   color: #F9FAF8;
-}
-
-.header_signup {
-  border: none;
 }
 
 .header_image {
@@ -68,14 +72,6 @@ body {
     color: #E5E7EB;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  gap: 16px;
-}
-
 a {
   text-decoration: none;
 }
@@ -88,7 +84,7 @@ a {
 }
 
 .images_title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 1000;
   color: #1F2937;
   display: flex;
@@ -114,13 +110,12 @@ a {
   font-size: 24px;
 }
 
-.products {
+.subimages {
   width: 300px;
   height: 300px;
-  border: solid 6px #3882F6;
+  border: solid 6px #444444;
   border-radius: 16px;
 }
-
 
 
 /* quote */
@@ -131,10 +126,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(images/notes.jpg);
+  background-size: cover;
 }
 
 .quote_container {
   width: 1000px;
+  padding: 16px;
+  border-radius: 8px;
+  rotate: -13deg;
 }
 
 .quote_text {
@@ -159,7 +159,7 @@ a {
 }
 
 .signup_container {
-  background-color: #3882F6;
+  background-color: #222222;
   color: white;
   width: 1200px;
   border-radius: 8px;
@@ -172,18 +172,14 @@ a {
 
 .signup_header {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
 }
 
-.signup_button {
-  border: solid white 2px;
-  flex-shrink: 0;
-}
 
 /* footer */
 
 .footer {
-  background-color: #1F2937;
+  background-color: #444444;
   color: white;
   text-align: center;
   padding: 32px;
@@ -197,12 +193,13 @@ a {
 
 
 button {
-  background-color: #3882F6;
+  background-color: #3434F7;
   color: white;
   font-weight: 700;
   font-size: 16px;
   border-radius: 8px;
-  padding: 6px 32px;
+  padding: 6px 32px;c
   cursor: pointer;
+  border: none;
 }
 
